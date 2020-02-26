@@ -1,0 +1,88 @@
+.catalog
+    .card_tab
+        display: flex
+        margin-top: 30px
+    p, span
+        font-family: 'Rubik', sans-serif
+    .card_title
+        font-weight: bold
+        color: #d58e32
+    .card_text
+        font-size: 14px
+        margin-bottom: 10px
+    .card_price
+        display: flex
+        align-items: center
+        flex-direction: column
+    .card_price span
+        display: flex;
+        align-self: self-start;
+        align-items: center;
+        padding-bottom: 10px
+    .card_info
+        margin-left: 20px
+    .card_btn
+        border-top: 1px solid
+        display: flex;
+        padding-top: 20px;
+        margin-left: 20px
+    .card_btn button
+        background: transparent
+        border: 2px solid #2a2a2a
+        margin-right: 10px
+    .card_btn button .fa
+        color: #2a2a2a
+    .add_cart_btn
+        border: none !important
+        background-color: #000 !important
+        height: 28px
+        padding-left: 10px
+        padding-right: 10px
+        font-family: 'Rubik', sans-serif
+        text-transform: uppercase
+        font-size: 14px
+    .add_cart_btn, .fa-shopping-basket
+        color: #fff !important
+    .fa-shopping-basket
+        padding-right: 5px
+    button:hover
+        background-color: #d58e32 !important
+        color: #000 !important
+    .beds
+        width: 1000px
+    .card_title:hover
+        color: #2a2a2a !important
+    .sale_card
+        font-size: 12px
+        text-decoration: line-through
+        margin-left: 10px
+        padding: 0 !important
+    .sale_card, .rub
+        font-size: 12px
+        color: #7d7c7c
+
+@media screen and ( max-width:767px)
+    .catalog
+        .card_tab
+            flex-direction: column
+        .beds
+            width: 50%
+        .card_info, .card_btn
+            margin-left: 0
+        .card_info
+            margin-top: 10px
+
+@media screen and ( max-width:460px)
+    .catalog
+        .beds
+            width: 100%
+    
+@media screen and ( max-width:402px)
+    .catalog
+        .card_btn button
+            margin-right: 4px
+
+@media screen and ( max-width:375px)
+    .catalog
+        .card_btn button
+            margin-right: 10px

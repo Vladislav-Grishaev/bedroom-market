@@ -1,0 +1,16 @@
+.catalog .top_eng {
+  margin-top: -1460px;
+}
+
+.banner .link_eng ul {
+  -webkit-box-pack: normal !important;
+      -ms-flex-pack: normal !important;
+          justify-content: normal !important;
+}
+
+@media screen and (max-width: 992px) {
+  .catalog .top_eng {
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=lang-style.css.map */

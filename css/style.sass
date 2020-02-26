@@ -1,0 +1,857 @@
+body
+    box-sizing: border-box
+    p, a, ul
+        margin: 0
+        padding: 0
+    ul
+        text-decoration: none
+    a:hover
+        text-decoration: none
+    li
+        list-style: none
+    a:focus
+        outline: none   
+
+.header
+    background-color: #434343
+    &__login a, &__registr a
+        color: #fff
+        font-size: 14px
+        font-family: 'Montserrat', sans-serif;
+        
+    //lang start
+    #container
+        display: flex
+        width: 100%;
+        height: 100%;
+        text-align: center;  
+    a.button
+        display: inline-flex 
+        margin-right: 1ex;
+        position: relative;
+        top: calc(50% - 1em);
+        text-align: center;
+        font-size: 14px
+        background: rgba(0, 0, 0, 0.1);
+        border: 2px solid white
+        transition: background 0.32s ease-in-out, box-shadow 0.32s ease-in-out;
+    a.button span
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 5px
+        color: #fff
+        text-transform: uppercase
+        transition: color 0.32s ease-in-out;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px
+    a.button:hover, a.button:focus, a.button.active
+        background: white;
+    a.button:hover span,  a.button:focus span, a.button.active span
+        color: #444;
+    a.button.active
+        font-weight: bold
+    a.button span img
+        width: 30px
+    //lang end
+
+    i
+        margin-right: 10px
+    &__top_nav
+        width: 100%
+    &__top_nav, &__registr_wrap
+        justify-content: space-between
+    &__lang, &__registr_wrap
+        width: 20%
+        align-items: center
+    &__top_nav
+        margin-top: 20px
+        margin-bottom: 20px
+    &__lang_wrap
+        display: flex
+        align-self: center
+    &__registr_wrap a:hover
+        color: #d58e35
+
+.info
+    background-color: #363636
+    span, a, p
+        color: #d8d8d8
+    &__logo 
+        width: 40%
+        flex-direction: column
+        text-align: center
+    &__logo img
+        width: 20%
+        margin: auto
+    &__midlle_info
+        display: flex
+        justify-content: space-between;
+        width: 100%;
+    &__logo .d-flex
+        justify-content: center
+    span
+        color: #d58e35
+    &__logo .d-flex p
+        color: #fff
+    &__logo .d-flex p, span
+        font-family: 'Raleway', sans-serif;
+        font-size: 28px
+    .fa-mobile, .fa-shopping-cart
+        display: flex
+        align-items: center 
+    .fa-mobile
+        color: #d58e32
+        font-size: 24px
+    .fa-mobile a
+        font-size: 16px
+        margin-left: 10px 
+    .fa-shopping-cart
+        color: #fff
+        justify-content: center
+        font-size: 14px
+    p, a
+        font-family: 'Source Sans Pro', sans-serif
+        letter-spacing: 1px
+        font-weight: normal
+    button
+        border: none
+        background-color: #d58e32
+        height: 40px
+        width: 40px
+        border-radius: 5px
+        position: relative
+    &__midlle_info
+        margin-top: 20px
+        margin-bottom: 20px
+    .number_cart
+        height: 20px;
+        width: 20px;
+        background: #363636;
+        color: #fff
+        border-radius: 50%;
+        margin-top: -15px;
+        position: absolute;
+        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    &__phone, &__cart
+        display: flex
+        width: 30%
+        justify-content: center
+        align-items: center
+    a:hover
+        color: #d58e35
+
+.nav
+    box-shadow: 0px 15px 10px -15px #111;   
+    &__menu
+        display: flex
+        width: 100%
+        justify-content: space-between
+    &__menu_link
+        width: 65%
+    ul
+        justify-content: space-between
+    a
+        color: #2a2a2a
+        font-family: 'Rubik', sans-serif;
+    li
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px
+        padding-right: 10px
+        text-transform: uppercase
+        font-weight: bold
+    li:hover
+        background-color: #d58e32
+        border-top: 3px solid #000
+    a:hover
+        color: #fff
+    .form-control
+        height: 20px
+    &__search
+        display: flex
+        align-items: center
+    input:focus
+        outline: none
+        border-color: #464646
+        box-shadow: none
+    input, button
+        border-color: #464646
+    .btn
+        border-left: none
+        border-radius: 0px
+    input
+        border-right: none
+        border-radius: 0px
+    input::placeholder
+        color: #2a2a2a
+    .fa-search
+        color: #2a2a2a
+    .fa-search:hover
+        color: #fff
+    .btn-outline-secondary:hover, 
+    .btn-outline-secondary:not(:disabled):not(.disabled).active, 
+    .btn-outline-secondary:not(:disabled):not(.disabled):active, 
+    .show>.btn-outline-secondary.dropdown-toggle
+        background-color: #d58e32
+        box-shadow: none !important
+        border-color: #464646!important
+    .mobile_wrap
+        display: none
+    &__cart
+        display: none
+    &__phone
+        display: none
+    &__login a, &__registr a
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    i
+        //margin-right: 10px
+    &__registr_wrap
+        display: flex
+        width: 80%
+        justify-content: flex-end
+        align-items: center
+    &__login
+        margin-right: 20px
+    .search_mob
+        display: none
+    .mobile-tab
+        //display: block !important
+
+
+.banner
+    &__wrap
+        background-color: #3f3f3f
+        width: 100%
+    &__title_banner
+        text-align: center
+        color: #fff
+        text-transform: uppercase
+        padding-top: 30px
+        padding-bottom: 30px
+        font-family: 'Montserrat', sans-serif
+    .info_category
+        font-size: 40px
+    .sale
+        font-size: 26px
+        letter-spacing: 10px
+    
+    .info_category span
+        font-weight: bold
+    .sale span
+        color: #d58e32
+    &__link ul
+        display: flex
+        justify-content: space-between
+    &__link a, i
+        color: #2a2a2a
+    &__link ul li
+        margin-right: 10px
+    i
+        margin-left: 10px
+    &__link
+        background-color: #e2e2e2
+        padding: 20px
+    a:active, a:hover
+        color: #d58e32
+    &__link button
+        background: transparent;
+        border: 1px solid #2a2a2a;
+    #btn_filter
+        display: none
+
+.catalog
+    &__left_sidebar, &__info, &__tabs
+        display: flex
+    &__left_sidebar
+        justify-content: space-between
+        padding-bottom: 20px
+    &__title p
+        text-transform: uppercase
+        font-size: 22px
+        font-weight: bold
+        font-family: 'Rubik', sans-serif
+        letter-spacing: 1px
+    &__info p
+        color: #7f7f7f
+    &__info
+        width: 50%
+        justify-content: space-between
+        align-items: center
+    &__left_sidebar
+        padding-top: 20px
+        border-bottom: 1px solid #000
+        align-items: center
+    .tab
+        border: 1px solid #b7b7b7
+        padding: 5px
+        color: #363636
+    .fa
+        color: #363636
+    .fa-th-large
+        padding-right: 5px
+    a:hover .fa
+        color: #d58e32
+    .active
+        color: #d58e32
+    &__sort p, &__show p
+        padding-bottom: 10px
+    &__tabs
+        align-self: flex-end
+    .fa-star-half-o
+        font-size: 14px
+
+    //select option start
+    select
+        padding: 5px
+        font-family: 'Rubik', sans-serif
+        color: #363636
+        font-size: 14px
+
+    //select option end
+
+    &__categories_title
+        border-bottom: 1px solid #000
+        padding-bottom: 10px
+        width: 100%
+    &__categories_title p
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Rubik', sans-serif;
+        letter-spacing: 1px;
+    &__categories
+        padding-top: 59px   
+        display: flex
+        align-items: center
+    .old_price
+        margin-right: 5px; 
+        white-space: nowrap;
+        padding: 0
+        font-size: 12px
+        align-self: center
+        text-decoration: line-through
+    .old_price i
+        font-size: 12px; 
+        white-space: nowrap;
+    .sale
+        width: 40px
+        position: absolute
+        transform: rotate(-45deg)
+    &__btn
+        display: flex
+        justify-content: space-around
+        margin-top: 10px
+    .col-lg-3
+        height: 100%
+    &__btn button
+        width: 25%
+        background-color: #2a2a2a
+        border: none
+        padding-top: 5px
+        padding-bottom: 5px
+    .fa-arrows-alt, .fa-shopping-basket
+        color: #fff
+    &__btn button:hover, &__btn_buy button:hover
+        background-color: #d58e32
+    &__btn button:hover .fa, &__btn_buy button:hover .fa
+        color: #2a2a2a
+    p
+        font-family: 'Rubik', sans-serif
+        padding-bottom: 5px
+    &__info_product
+        padding-top: 10px
+        display: flex
+        align-items: center
+        flex-direction: column
+        border-bottom: 2px solid #2a2a2a
+        padding-bottom: 10px;
+    &__buy
+        display: flex
+        justify-content: space-between
+        padding: 10px
+        display: inline-flex;
+        width: 100%;
+    .card
+        border: 2px solid #e2e2e2
+        margin-top: 30px
+    &__btn_buy button
+        border: 2px solid #2a2a2a
+        background-color: #fff
+        margin-right: 5px; padding: 0;
+        width: 30px;
+        height: 30px
+    &__btn_buy
+        display: inline-flex
+    &__info_product p
+        color: #d58e32
+        text-align: center
+    &__price p
+        padding: 0
+        font-size: 14px
+        white-space: nowrap
+    &__price p i
+        white-space: nowrap
+    &__price
+        display: flex
+        align-items: center
+        padding-left: 5px
+        padding-right: 5px
+    .fa-rub
+        margin-left: 2px
+    &__price
+        background-color: #d58e32
+    .mobile_product
+        display: none
+    .products_top
+        margin-top: -1505px
+
+    //filters start
+    .spoiler-title
+        display: flex;
+        align-items: center;
+        background: transparent
+        border: none
+        width: 100%
+        justify-content: space-between
+        color: #2a2a2a
+        font-family: 'Rubik', sans-serif
+        font-weight: bold;
+        letter-spacing: 1px;
+    .spoiler-body
+        padding-left: 5px
+        padding-right: 5px
+    .spoiler-title:hover
+        color: #db9d4d
+    .spoiler-title:focus
+        outline: none
+    .spoiler-title:active
+        color: #db9d4d
+    &__wrap_slide
+        margin-bottom: 15px
+    &__wrap_text_slide
+        display: flex
+        flex-direction: column
+    a
+        color: #2a2a2a
+        font-family: 'Rubik', sans-serif
+        padding-top: 10px
+    a:hover
+        font-weight: bold
+        color: #db9d4d !important
+    &__wrap_slide .spoiler-body &__wrap_text_slide label
+        margin-top: 10px
+    &__wrap_slide p
+        margin-top: 23px
+    //filter end
+
+    //price slide start
+    .price_slide
+
+    .price_slide p
+        margin-top: 30px
+        margin-bottom: 20px
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+        width: 100%;
+        font-family: 'Rubik', sans-serif;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+    .filter
+        max-width: 320px;
+        padding: 0px;
+        font-size: 0;
+    .range-widget
+        font-family: 'ProximaNova', sans-serif;
+        line-height: 1.2;     
+    .range-widget__row:after   
+        display: table;
+        clear: both;
+        content: '';
+    .range-widget__col
+        float: left;
+        width: 50%;
+        padding: 0 0 0 10px;
+    .range-widget__col:first-child
+        padding: 0 10px 0 0
+    .range-widget__slider
+        margin: 0 0 18px;
+    .range-widget__input
+        text-align: center
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 36px;
+        color: #000;
+        font-size: 14px;
+        line-height: 36px;
+        outline: 0 none;
+        border: 0 none;
+        background: transparent;     
+    .range-widget__input::-webkit-input-placeholder
+        color: #97979e;
+        font-size: 14px;   
+    .range-widget__input::-moz-placeholder
+        color: #97979e;
+        font-size: 14px;
+        opacity: 1; 
+    .range-widget__input:-moz-placeholder
+        color: #97979e;
+        font-size: 14px;          
+    .range-widget__input:-ms-input-placeholder
+        color: #97979e;
+        font-size: 14px;
+    .range-widget__input-prefix
+        float: left;
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin-left: -36px;
+        color: #000;
+        font-size: 14px;
+        line-height: 36px;
+        text-align: center
+    .range-widget__input-wrapper
+        width: 100%;
+        height: 40px;
+        padding: 0 16px 0 36px;
+        line-height: 1;
+        text-align: left;
+        border: 2px solid #d58e32;
+        background: #fff;
+        max-width: 200px   
+    .range-widget__input-wrapper--type_simple
+        padding: 0 16px;
+    .range-widget .noUi-horizontal
+        height: 4px;
+        border-radius: 2px;
+        border: 0 none;
+        box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.15);   
+    .range-widget .noUi-connect
+        border-radius: 2px;
+        background: #2a2a2a;
+        height: 5px
+        box-shadow: 0 1px 0 #fff, inset 0 1px 1px rgba(121, 139, 81, 0.49);       
+    .range-widget .noUi-horizontal .noUi-handle
+        border: 2px solid #d58e32
+        left: -7px;
+        top: -7px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        outline: 0 none;
+        background-color: #fff;
+        background-image: -webkit-linear-gradient(bottom, rgba(121, 139, 81, 0.09) 0%, rgba(121, 139, 81, 0) 100%);
+        background-image: linear-gradient(to top, rgba(121, 139, 81, 0.09) 0%, rgba(121, 139, 81, 0) 100%);
+        box-shadow: 0 1px 3px rgba(121, 139, 81, 0.61);
+    .range-widget .noUi-horizontal .noUi-handle:hover,
+    .range-widget .noUi-horizontal .noUi-handle:focus
+        background-color: #d58e32   
+    .range-widget .noUi-horizontal .noUi-handle:before,
+    .range-widget .noUi-horizontal .noUi-handle:after
+        display: none;
+
+    //price slide end
+
+    //color start
+    .color_product
+        padding-top: 20px
+
+    .d-flex a
+        cursor: pointer
+        padding: 0
+        margin-left: 5px
+        font-weight: bold;
+        letter-spacing: 1px;
+    .d-flex p:hover
+        color: #d58e32
+    .color_product .d-flex
+        align-items: center
+    .color_title
+        font-family: 'Rubik', sans-serif;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 10px
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+        width: 100%;
+    .first
+        padding-top: 20px
+    .first, .two, .three, .four, .five, .six  
+        padding-bottom: 10px
+    .color_title .d-flex button:focus
+        outline: none
+
+    //chekbox start
+    .checkbox-label[data-v-0b8bc5d4]
+        display: inline-block;
+        min-height: 16px;
+        position: relative;
+        padding-left: 21px;
+        color: #2a2a2a;
+        font-family: 'Rubik', sans-serif;
+        letter-spacing: 1px
+        font-weight: bold
+        font-size: 16px;
+        line-height: 19px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none   
+    .checkbox-label .checkbox[data-v-0b8bc5d4]
+        position: absolute;
+        visibility: hidden;   
+    input
+        font-family: 'Rubik', sans-serif;
+        font-size: 100.1%;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        word-spacing: normal;
+    .checkmark[data-v-0b8bc5d4]
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #fff;
+        border: 2px solid green
+        border-radius: 2px        
+    .b4p3
+        display: inline-block;
+        vertical-align: top;
+        line-height: 100%;
+        margin-top: 2px;
+        margin-left: 5px
+    .checkbox-label .checkbox:checked~.checkmark[data-v-0b8bc5d4]:after
+        display: block;
+    .checkbox-label .checkmark[data-v-0b8bc5d4]:after
+        display: none;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: -4px;
+        left: 0px;
+        font: normal normal normal 20px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        content: "\f00c";  
+        color: #d58e32
+    .check_border
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #fff;
+        border-radius: 2px   
+        border: 2px solid #d58e32 !important
+    .dub-dark, .nut, .venge, .gray, .yasen, .sosna
+        height: 20px
+        width: 20px
+        border-radius: 50%
+        margin-left: 10px
+    .dub-dark
+        background-color: #492d09
+    .nut
+        background-color: #704309
+    .venge
+        background-color: #3c2303
+    .gray
+        background-color: #b8b8b8
+    .yasen
+        background-color: #decab0
+    .sosna
+        background-color: #eaaa58
+    label
+        margin-bottom: 0    
+        justify-content: space-between
+        width: 100%
+    //checkbox end
+
+    //material start
+    .material
+        border: 2px solid #d58e32 !important
+
+    //material end
+    
+    //color end
+    
+    .filter_btn button
+        background-color: #2a2a2a
+        color: #fff
+        border: none
+        padding-left: 15px
+        padding-right: 15px
+        padding-top: 5px
+        padding-bottom: 5px
+        font-family: 'Rubik', sans-serif
+        border-radius: 5px
+    .filter_btn button:hover
+        background-color: #d58e32
+        color: #000
+    .filter_btn
+        display: flex
+        justify-content: center
+        margin-top: 20px
+    .filter_btn button:focus
+        outline: none
+    .load_page
+        display: flex
+        justify-content: center
+        margin-top: 30px
+        margin-bottom: 30px
+    .load
+        background-color: #eeeeee
+        width: 55px
+        height: 55px
+        display: flex
+        justify-content: center
+        box-shadow: 0px 0px 16px 0px;
+        border-radius: 50%
+    .fa-refresh
+        font-size: 20px
+        display: flex
+        align-items: center
+
+    //popular product start
+    &__popular
+        margin-top: 30px
+    .popular_product
+        display: flex
+        margin-top: 20px
+        border: 2px solid #e2e2e2;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    &__img_popular
+        width: 100px
+        display: flex;
+        align-items: center;
+    .price_popular, .fa-star, .fa-rub, .fa-star-o,
+    &__title_popular
+        font-size: 14px
+    .star
+        margin-bottom: 20px
+    .star .fa-star, .star .fa-star-o
+        padding-right: 5px
+    &__info_popular button
+        background-color: #2a2a2a;
+        color: #fff;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: 'Rubik', sans-serif;
+        border-radius: 5px;
+        font-size: 14px
+    &__info_popular button:hover
+        background-color: #d58e32;
+        color: #000;
+    &__popular_info
+        font-size: 20px
+        font-weight: bold
+    .filters_mobile
+        display: none
+    .filters_mobile.on
+        display: block
+    .filters_mobile.off
+        display: none
+    #close
+        background: transparent
+        border: none
+        margin-left: 100%
+        margin-top: 30px
+    #close .left, #close .right
+        transition: .2s ease all;
+        border-radius: 8px;
+        height: 2px;
+        width: 25px;
+        display: block
+        background-color: gray
+    #close .left
+        transform: rotate(45deg)
+        position: absolute
+
+    #close .right
+        transform: rotate(-45deg)
+.form
+    background-color: #f2f2f2
+    .row
+        justify-content: center
+    form
+        padding-top: 30px
+        padding-bottom: 30px
+        width: 95%
+    .form-row
+        flex-direction: column
+    .input_btn
+        display: flex
+        margin-top: 20px
+        width: 50%
+    .input_wrap
+        width: 90%
+    .input-group-text, .btn
+        background-color: #fff !important
+        border: none
+    .form-control
+        border-left: 2px soldid #bfbfbf
+        border-top: none
+        border-bottom: none
+        border-right: none
+    .input-group-text
+        border: none
+    .fa
+        color: #d58e32
+    .form-control:focus, .btn:focus
+        box-shadow: none
+        border-color: #bfbfbf
+    .btn-primary:not(:disabled):not(.disabled):active:focus
+        background-color: #fff !important
+        border-color: #bfbfbf
+    .btn-primary:not(:disabled):not(.disabled):active:focus
+        box-shadow: 0 0 0 0.2rem rgba(142, 142, 142, 0.5);
+
+.footer
+    background-color: #363636
+    a
+        color: #a9a9a9
+        font-family: 'Rubik', sans-serif
+        font-size: 14px
+    a:hover
+        color: #fff
+    &__title
+        color: #fff
+        font-weight: bold
+        font-size: 18px
+        font-family: 'Rubik', sans-serif
+    .row
+        padding-top: 50px
+        //padding-bottom: 50px
+    .img-fluid
+        width: 20%
+        margin-right: 20px
+        margin-bottom: 20px
+    .col-lg-3
+        height: max-content
+
+

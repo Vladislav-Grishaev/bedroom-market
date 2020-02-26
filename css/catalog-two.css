@@ -1,0 +1,149 @@
+.catalog .card_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.catalog p, .catalog span {
+  font-family: 'Rubik', sans-serif;
+}
+
+.catalog .card_title {
+  font-weight: bold;
+  color: #d58e32;
+}
+
+.catalog .card_text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.catalog .card_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.catalog .card_price span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: self-start;
+      align-self: self-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+
+.catalog .card_info {
+  margin-left: 20px;
+}
+
+.catalog .card_btn {
+  border-top: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
+.catalog .card_btn button {
+  background: transparent;
+  border: 2px solid #2a2a2a;
+  margin-right: 10px;
+}
+
+.catalog .card_btn button .fa {
+  color: #2a2a2a;
+}
+
+.catalog .add_cart_btn {
+  border: none !important;
+  background-color: #000 !important;
+  height: 28px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.catalog .add_cart_btn, .catalog .fa-shopping-basket {
+  color: #fff !important;
+}
+
+.catalog .fa-shopping-basket {
+  padding-right: 5px;
+}
+
+.catalog button:hover {
+  background-color: #d58e32 !important;
+  color: #000 !important;
+}
+
+.catalog .beds {
+  width: 1000px;
+}
+
+.catalog .card_title:hover {
+  color: #2a2a2a !important;
+}
+
+.catalog .sale_card {
+  font-size: 12px;
+  text-decoration: line-through;
+  margin-left: 10px;
+  padding: 0 !important;
+}
+
+.catalog .sale_card, .catalog .rub {
+  font-size: 12px;
+  color: #7d7c7c;
+}
+
+@media screen and (max-width: 767px) {
+  .catalog .card_tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .catalog .beds {
+    width: 50%;
+  }
+  .catalog .card_info, .catalog .card_btn {
+    margin-left: 0;
+  }
+  .catalog .card_info {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .catalog .beds {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 402px) {
+  .catalog .card_btn button {
+    margin-right: 4px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .catalog .card_btn button {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=catalog-two.css.map */
